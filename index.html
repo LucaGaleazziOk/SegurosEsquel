@@ -24,8 +24,7 @@
 <body>
     <header class="header">
         <div class="container header__content">
-            <a href="index.html"> <img src="./images/logo.jpg" alt="Productores de seguros esquel"
-                    class="header__imagen"></a>
+            <a href="#"> <img src="./images/logo.jpg" alt="Productores de seguros esquel" class="header__imagen"></a>
             <h2 class="header__text">Bienvenid@</h2>
         </div>
     </header>
@@ -67,7 +66,7 @@
                 <h3 class="vision__title">Nuestra vision <i class="fa-solid fa-eye"></i></h3>
                 <p class="vision__text">Ser una organizacion de servicios de asesoramiento integral en seguros, con una
                     firme orientacion en el cliente, líder en el mercado local y regional, reconocida por brindar
-                    soluciones con alto grado de confiabilidad, flexibilidad y compromiso profesional.</p>
+                    soluciones con alto grado de confiabilidad, flexibilidad y compromiso profesional.</p>
             </div>
         </div>
     </section>
@@ -126,7 +125,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="/js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carouselItems = document.querySelectorAll('.carousel')
+            M.Carousel.init(carouselItems, {
+                duration: 150,
+                indicators: true
+            })
+        });
+    </script>
 </body>
 
 </html>
