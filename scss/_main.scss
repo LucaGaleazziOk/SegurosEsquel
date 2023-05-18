@@ -144,3 +144,195 @@
 .carousel {
     perspective: 120rem;
 }
+
+// contrata tu seguro
+
+.contrata {
+    width: 100%;
+    height: max-content;
+}
+
+.contrata__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contrata__title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contrata__title {
+        font-size: 3.4rem;
+    }
+}
+
+.contrata__text {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.contrata__btn {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: .3rem solid var(--amarillo);
+    background-color: var(--amarillo);
+    color: var(--azul);
+}
+
+@media (max-width: 768px) {
+    .contrata__text {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .contrata__btn {
+        font-size: 1.8rem;
+    }
+}
+
+.contrata__btn:hover {
+    color: var(--blanco);
+    background-color: var(--azul);
+    transition: .5s ease-out;
+
+}
+
+// encontranos
+.encontranos {
+    width: 100%;
+    height: max-content;
+}
+
+.encontranos__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto__title {
+    text-align: center;
+}
+
+.contacto__iconos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.c-icon {
+    font-size: 3rem;
+    color: var(--azul);
+}
+
+.c-icon:hover {
+    color: var(--amarillo);
+    transition: .3s ease-in;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes__title {
+    text-align: center;
+}
+
+.redes__iconos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.r-icon {
+    font-size: 3rem;
+    color: var(--azul);
+}
+
+.r-icon:hover {
+    color: var(--amarillo);
+    transition: .3s ease-in;
+}
+
+.ubicacion {
+    width: 100%;
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ubicacion__maps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ubicacion__maps iframe {
+    max-width: 90%;
+}
+
+.ubicacion__maps h3 {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.ubicacion__maps--horarios {
+    color: var(--amarillo);
+}
+
+@media (max-width: 768px) {
+    .encontranos__content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .ubicacion {
+        grid-column: 1 / 2;
+    }
+
+}
+
+//footer
+.footer {
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color: var(--azul);
+    border-top: .3rem solid var(--amarillo);
+}
+
+.footer__text {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--amarillo);
+}
