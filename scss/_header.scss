@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    height: max-content;
+    border-bottom: 2px solid black;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .header__content {
+        flex-direction: column;
+    }
+}
+
+.header__imagen {
+    width: 8rem;
+    margin: 2rem 0;
+    border-radius: .5rem;
+}
+
+.header__text {
+    color: var(--azul);
+    text-align: center;
+}
